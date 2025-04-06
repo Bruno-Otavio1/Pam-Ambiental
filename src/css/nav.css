@@ -1,0 +1,130 @@
+/* Navigation styles */
+.nav-container {
+    background-color: #005025;
+    background-image: linear-gradient(160deg, #005025 0%, #003819 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Reduced from 10px to 4px to bring elements closer */
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-logo img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin-right: 0px;
+    /* Added negative margin to pull text even closer */
+}
+
+.nav-logo:hover {
+    opacity: 0.9;
+}
+
+/* Rest of the existing nav styles remain the same */
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
+    font-size: 18px;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: white;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #005025;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-content {
+        padding: 15px 20px;
+    }
+}
+
+/* Add margin to main content to prevent overlap with fixed nav */
+.home {
+    margin-top: 80px;
+}

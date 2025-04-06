@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<head>
+  <html lang="pt-BR">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@600&display=swap" rel="stylesheet">
+
+  <title>Pan Ambiental</title>
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="nav-container">
+    <div class="nav-content">
+      <a href="./home.html" class="nav-logo">
+        <img src="../../img/logo-pan.png" alt="Logo CompostaFácil">
+        Pan Ambiental
+      </a>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./montagem.html">Montagem</a></li>
+        <li><a href="./gerenciamento.html">Gerenciamento</a></li>
+        <li><a href="./problemas.html">Resolução de Problemas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="home">
+
+
+    <h2>Sobre o que é o site?</h2><br>
+
+
+    <p style="margin-bottom: 50px;">Transforme resíduos orgânicos em um recurso valioso para sua horta, jardim ou
+      plantas de casa. Se você sempre quis aprender a criar e gerenciar sua própria composteira, está no lugar certo!
+      Nosso objetivo é simplificar o processo de compostagem, oferecendo um passo a passo claro e fácil de seguir, desde
+      a montagem da sua composteira até o cuidado diário para garantir um composto de alta qualidade.<br><br>
+      Com dicas práticas, tutoriais interativos e ferramentas para monitoramento, vamos te ajudar a reaproveitar os
+      resíduos de sua casa, reduzir o desperdício e ainda enriquecer o solo de maneira sustentável e ecológica.</p>
+
+
+    <h2><img src="../../img/img-fundo/rest-organic.jpg" alt="imagem de uma pessoa pegando terra do chão"
+        style="float:right;width:500px;height:225px;">
+      O que é a compostagem?</h2><br>
+
+
+    <p style="margin-bottom: 50px;">A compostagem é o processo natural de decomposição de materiais orgânicos, como
+      restos de comida, folhas secas e outros resíduos biodegradáveis, transformando-os em um composto rico em
+      nutrientes. Esse processo ocorre quando microrganismos, como bactérias, fungos e vermes, quebram os materiais
+      orgânicos em um ambiente controlado, criando um fertilizante natural e sustentável.<br><br>
+      Ao compostar, você está ajudando a reduzir a quantidade de lixo que vai para os aterros sanitários, contribuindo
+      para a diminuição das emissões de gases de efeito estufa, como o metano. Além disso, a compostagem transforma
+      resíduos simples em um valioso recurso para o solo, enriquecendo-o com nutrientes essenciais para o crescimento
+      saudável de plantas e hortas.</p>
+
+
+    <h2><img src="../../img/img-fundo/composteira.jpg" alt="imagem de uma pessoa pegando terra do chão"
+        style="float:left; width:500px; height:225px; padding-right: 15px;">
+      Por que compostar?</h2>
+
+
+    <li>
+      Reduz o desperdício: A compostagem ajuda a diminuir a quantidade de lixo gerado em sua casa, especialmente
+      resíduos orgânicos que representam uma grande parte do lixo doméstico.</li><br>
+
+
+    <li>Melhora a qualidade do solo: O composto orgânico resultante da compostagem pode ser utilizado para
+      enriquecer o
+      solo, promovendo uma agricultura mais saudável e sustentável, além de melhorar a retenção de água e a estrutura do
+      solo.</li><br>
+
+
+    <li>
+      Economia e sustentabilidade: Compostar é uma maneira prática de reduzir a necessidade de fertilizantes químicos e
+      pesticidas, além de criar um ciclo fechado de reutilização dos recursos. Com o composto, você pode fertilizar
+      plantas e hortas de forma natural, sem prejudicar o meio ambiente.</li><br>
+
+
+    <li>
+      Compostar é fácil e pode ser feito em qualquer espaço, seja em um pequeno apartamento ou em um grande jardim. A
+      prática oferece benefícios para sua casa, o meio ambiente e para o planeta como um todo. Está pronto para começar
+      a compostagem e contribuir para um mundo mais verde e sustentável?</li><br><br>
+
+
+
+  </div>
+
+  <footer class="footer-new">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>Transforme resíduos orgânicos em recursos valiosos para seu jardim com nossa guia completa de compostagem.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./montagem.html">Montagem</a></li>
+          <li><a href="./gerenciamento.html">Gerenciamento</a></li>
+          <li><a href="./problemas.html">Resolução de Problemas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p>Entre em contato conosco para mais informações sobre compostagem.</p>
+      </div>
+    </div>
+    <br><br>
+    <hr style="margin-left: 8%; margin-right: 8%;">
+    <br><br><br><br><br><br><br><br>
+  </footer>
+
+
+  <script>
+    // Aguarda o DOM estar completamente carregado
+    document.addEventListener('DOMContentLoaded', function () {
+      // Adiciona fade-in aos elementos quando ficam visíveis
+      const observerOptions = {
+        root: null,
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observa todos os parágrafos e títulos para animação
+      document.querySelectorAll('.home p, .home h2').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Funcionalidade do menu mobile
+      const menuButton = document.querySelector('.nav-content ☰');
+      const navLinks = document.querySelector('.nav-content');
+
+      if (menuButton) {
+        menuButton.addEventListener('click', () => {
+          navLinks.classList.toggle('nav-open');
+        });
+      }
+
+      // Melhora a acessibilidade das imagens
+      document.querySelectorAll('img').forEach(img => {
+        // Adiciona role="img" para melhor semântica
+        img.setAttribute('role', 'img');
+
+        // Se não tiver alt, usa o título da imagem como alternativa
+        if (!img.alt && img.title) {
+          img.alt = img.title;
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
