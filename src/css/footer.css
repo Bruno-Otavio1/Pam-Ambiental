@@ -1,4 +1,3 @@
-/* Footer styles - improved version */
 .footer-new {
     background-color: #005025;
     background-image: linear-gradient(160deg, #005025 0%, #003819 100%);
@@ -35,7 +34,6 @@
     padding-bottom: 12px;
 }
 
-/* Underline effect for headers */
 .footer-section h3::after {
     content: '';
     position: absolute;
@@ -51,7 +49,6 @@
     width: 60px;
 }
 
-/* Paragraph styles */
 .footer-section p {
     color: #e0e0e0;
     font-size: 16px;
@@ -61,7 +58,6 @@
     max-width: 90%;
 }
 
-/* List styles */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -142,7 +138,6 @@
     }
 }
 
-/* Optional: Add a subtle top border */
 .footer-new::before {
     content: '';
     position: absolute;
