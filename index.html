@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
+  <link rel="stylesheet" href="./src/css/nav.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@600&display=swap" rel="stylesheet">
 
@@ -23,16 +23,16 @@
 
   <nav class="nav-container">
     <div class="nav-content">
-      <a href="./home.html" class="nav-logo">
+      <a href="./index.html" class="nav-logo">
         <img src="../../img/logo-pan.png" alt="Logo CompostaFácil">
         Pan Ambiental
       </a>
       <button class="nav-toggle" id="navToggle">☰</button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./montagem.html">Montagem</a></li>
-        <li><a href="./gerenciamento.html">Gerenciamento</a></li>
-        <li><a href="./problemas.html">Resolução de Problemas</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./src/html/montagem.html">Montagem</a></li>
+        <li><a href="./src/html/gerenciamento.html">Gerenciamento</a></li>
+        <li><a href="./src/html/problemas.html">Resolução de Problemas</a></li>
       </ul>
     </div>
   </nav>
@@ -53,7 +53,7 @@
       resíduos de sua casa, reduzir o desperdício e ainda enriquecer o solo de maneira sustentável e ecológica.</p>
 
 
-    <h2><img src="../../img/img-fundo/rest-organic.jpg" alt="imagem de uma pessoa pegando terra do chão"
+    <h2><img src="./img/img-fundo/rest-organic.jpg" alt="imagem de uma pessoa pegando terra do chão"
         style="float:right;width:500px;height:225px;">
       O que é a compostagem?</h2><br>
 
@@ -68,7 +68,7 @@
       saudável de plantas e hortas.</p>
 
 
-    <h2><img src="../../img/img-fundo/composteira.jpg" alt="imagem de uma pessoa pegando terra do chão"
+    <h2><img src="./img/img-fundo/composteira.jpg" alt="imagem de uma pessoa pegando terra do chão"
         style="float:left; width:500px; height:225px; padding-right: 15px;">
       Por que compostar?</h2>
 
@@ -110,10 +110,10 @@
       <div class="footer-section">
         <h3>Links Úteis</h3>
         <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./montagem.html">Montagem</a></li>
-          <li><a href="./gerenciamento.html">Gerenciamento</a></li>
-          <li><a href="./problemas.html">Resolução de Problemas</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./src/html/montagem.html">Montagem</a></li>
+          <li><a href="./src/html/gerenciamento.html">Gerenciamento</a></li>
+          <li><a href="./src/html/problemas.html">Resolução de Problemas</a></li>
         </ul>
       </div>
 
@@ -129,9 +129,7 @@
 
 
   <script>
-    // Aguarda o DOM estar completamente carregado
     document.addEventListener('DOMContentLoaded', function () {
-      // Adiciona fade-in aos elementos quando ficam visíveis
       const observerOptions = {
         root: null,
         threshold: 0.1
@@ -145,12 +143,10 @@
         });
       }, observerOptions);
 
-      // Observa todos os parágrafos e títulos para animação
       document.querySelectorAll('.home p, .home h2').forEach(el => {
         observer.observe(el);
       });
 
-      // Funcionalidade do menu mobile
       const menuButton = document.querySelector('.nav-content ☰');
       const navLinks = document.querySelector('.nav-content');
 
@@ -160,12 +156,9 @@
         });
       }
 
-      // Melhora a acessibilidade das imagens
       document.querySelectorAll('img').forEach(img => {
-        // Adiciona role="img" para melhor semântica
         img.setAttribute('role', 'img');
 
-        // Se não tiver alt, usa o título da imagem como alternativa
         if (!img.alt && img.title) {
           img.alt = img.title;
         }
